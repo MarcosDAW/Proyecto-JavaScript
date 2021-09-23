@@ -1,4 +1,4 @@
-// la libreria Math es una libreria matemática
+//la libreria Math es una libreria matemática
 //para usarlo solo debo llamarlo 
 
 const NPI = 3.1415; // las constantes siempre van en mayúsculas
