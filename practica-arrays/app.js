@@ -6,7 +6,7 @@ console.log("Estoy en el fichero app");
 //underfind, null, boolean,string
 //number, object, symbol
 
-//Vamos a inicializar una variable
+//Vamos a inicializar una variable 
 var variableA = 10;
 console.log(variableA);
 variableA = "10";
