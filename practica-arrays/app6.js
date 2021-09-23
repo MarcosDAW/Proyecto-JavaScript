@@ -1,4 +1,5 @@
 /*
+(ejercicio de array aleatorio)
 Crear un Array de longitud aleatoria pero menor a 20
 y contenga números aleatorios comprendidos entre 0 y 10
 por ultimo mostrara el array, calculara la suma de los
