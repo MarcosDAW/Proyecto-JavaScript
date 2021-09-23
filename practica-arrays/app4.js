@@ -1,4 +1,4 @@
-//metodos
+//metodos 
 var nombre = "pepe";
 console.log(nombre.toUpperCase());
 console.log(nombre.indexOf("e"));
