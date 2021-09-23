@@ -1,4 +1,4 @@
-/*
+/* 
 Dado el siguiente array, miArray = [6, 44, 3, 21, 11, 9, 20];
 calcula;
 
