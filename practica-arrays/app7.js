@@ -22,19 +22,21 @@ console.log ( "array izquierda: " + arrayIzquierda );
 console.log ( "array derecha: " + arrayDerecha );
 var arrayInvertido = []
 
-for ( var i = arrayIzquierda.length ; i > 0 ; i--) {
+//-----------INVIERTE EL TEXTO DE LA IZQUIERDA--------
+
+for ( var i = arrayIzquierda.length ; i > -1 ; i--) {
     arrayInvertido.push( arrayIzquierda[ i ] );
 }
-
 console.log( "array invertido: " + arrayInvertido );
 
-//------------------------0---------------------------
+//---------------------PRUEBA-------------------------
 /*
 var saludo = "hola" ;
 var codigoAscii = 0;
 console.log ( saludo ) ;
 */
 //----------------- NO TERMINADO ---------------------
+
 for ( var i = 0 ; i < arrayDerecha.length ; i++ ) {
     codigoAscii = arrayDerecha[ i ].charCodeAt( i );
     console.log( arrayDerecha[ i ].charCodeAt( i ) );
