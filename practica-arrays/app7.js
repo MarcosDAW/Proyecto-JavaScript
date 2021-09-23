@@ -9,23 +9,36 @@ disponemos de una cadena de texto
 6)mostramos
 --2.0--
 */
-var textoSinCambios = "Hola Compare";
+var textoSinCambios = "me comi una salchipapa";
 var textoMinusculas = textoSinCambios.toLowerCase();
 
 let newTexto = textoMinusculas.split("");
-console.log ( newTexto );
-var numAleatorio = Math.floor( Math.ceil ( Math.random() * ( newTexto.length - 2 ) + 2 ));
-console.log ( textoMinusculas.length );
+console.log ( "Texto: " + newTexto );
+var numAleatorio = Math.floor( Math.ceil ( Math.random() * ( newTexto.length-1 ) ));
+console.log ( "cantidad de caracteres: " + textoMinusculas.length );
 var arrayIzquierda = newTexto.slice( 0 , numAleatorio );
 var arrayDerecha = newTexto.slice( numAleatorio , newTexto.length)
-console.log ( arrayIzquierda );
-console.log ( arrayDerecha );
+console.log ( "array izquierda: " + arrayIzquierda );
+console.log ( "array derecha: " + arrayDerecha );
 var arrayInvertido = []
 
-for ( var i = arrayIzquierda.length ; i = 0 ; i--) {
-    arrayInvertido = arrayIzquierda[ i ];
+for ( var i = arrayIzquierda.length ; i > 0 ; i--) {
+    arrayInvertido.push( arrayIzquierda[ i ] );
 }
-console.log(arrayInvertido);
+
+console.log( "array invertido: " + arrayInvertido );
+
+//------------------------0---------------------------
+/*
+var saludo = "hola" ;
+var codigoAscii = 0;
+console.log ( saludo ) ;
+*/
+//----------------- NO TERMINADO ---------------------
+for ( var i = 0 ; i < arrayDerecha.length ; i++ ) {
+    codigoAscii = arrayDerecha[ i ].charCodeAt( i );
+    console.log( arrayDerecha[ i ].charCodeAt( i ) );
+}
 
 
 
