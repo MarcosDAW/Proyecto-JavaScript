@@ -9,7 +9,7 @@ disponemos de una cadena de texto
 6)mostramos
 --2.0--
 */
-var textoSinCambios = "me comi una salchipapa";
+var textoSinCambios = "hola";
 var textoMinusculas = textoSinCambios.toLowerCase();
 
 let newTexto = textoMinusculas.split("");
@@ -20,7 +20,7 @@ var arrayIzquierda = newTexto.slice( 0 , numAleatorio );
 var arrayDerecha = newTexto.slice( numAleatorio , newTexto.length)
 console.log ( "array izquierda: " + arrayIzquierda );
 console.log ( "array derecha: " + arrayDerecha );
-var arrayInvertido = []
+var arrayInvertido = [];
 
 //-----------INVIERTE EL TEXTO DE LA IZQUIERDA--------
 
@@ -29,20 +29,26 @@ for ( var i = arrayIzquierda.length ; i > -1 ; i--) {
 }
 console.log( "array invertido: " + arrayInvertido );
 
-//---------------------PRUEBA-------------------------
-/*
-var saludo = "hola" ;
-var codigoAscii = 0;
-console.log ( saludo ) ;
-*/
-//----------------- NO TERMINADO ---------------------
+//-----------TRASLADAR EL TEXTO DE LA DERECHA--------
 
-for ( var i = 0 ; i < arrayDerecha.length ; i++ ) {
-    codigoAscii = arrayDerecha[ i ].charCodeAt( i );
-    console.log( arrayDerecha[ i ].charCodeAt( i ) );
+var arrayTrasladado = [];
+var abecedario = ['a' , 'b' , 'c' , 'd' , 'e' ,
+'f' , 'g' , 'h' , 'i' , 'j' , 'k' , 'l' , 'm' ,
+'n' , 'o' , 'p' , 'q' , 'r' , 's' , 't' , 'u' ,
+'v' , 'w' , 'x' , 'y' , 'z' ];
+
+var contador = 0;
+for( var i = 0 ; i < abecedario.length || contador < arrayDerecha.length ; i++ ){
+    if( arrayDerecha[ contador ] == abecedario[ i ]){
+        arrayTrasladado.push( abecedario[ i + 3 ] );
+        contador++;
+    }
 }
-
-
-
-
+console.log( "array Trasladado: " + arrayTrasladado );
+/*
+var arraysJuntos = [];
+arraysJuntos.push( arrayInvertido );
+arraysJuntos.push( arrayTrasladado );
+console.log( arraysJuntos );
+*/
 
