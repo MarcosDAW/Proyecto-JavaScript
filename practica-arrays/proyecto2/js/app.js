@@ -46,9 +46,38 @@ return diaSemana;
 //EXPRECIONES FUNCIONALES
 // NO SE ALZAN
 //Tienen el return implícito. (no hay porqué poner return)
-
+/*
 let func = ( a , b ) => a + b ;
 
 let func2 = function name( a , b ){
     return a + b ;
 };
+*/
+//--------------------------------------------
+/*
+let edad = prompt( "Qué edad tienes" , 18 );
+
+//(condicion) ? Accion_si_condición_verdad : Acción_si_condición_falso
+
+let saludo = ( edad > 18 ) ?
+    () => alert("Bienvenido!!!"):
+    () => alert("Sorry no puedes acceder por ser menor de edad");
+
+saludo();
+*/
+//----------------------------------------------
+
+//parámetros REST (No son el operador SPREAD)
+//consiste en llamar a una función con cualquier número de parámetros.
+function sumarTodo(...numeros) {//números será el array que paso
+    let suma = 0;
+    for( let valor of numeros ){
+        suma += valor;
+    }
+    return suma;
+}
+console.log(sumarTodo(1,2,3,4,5)); 
+
+//Spread
+let miArray = [1,2,3,4,5];
+alert(Math.max(...miArray));
