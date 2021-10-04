@@ -13,7 +13,8 @@
 //cuenta creada en CodePen con gitHub
 
 var dia = new Date().getDay();
-function diaSemana() {
+var diaSemana;
+function dias() {
   switch (dia) {
     case 0:
         diaSemana = "Domingo";
@@ -35,7 +36,19 @@ function diaSemana() {
         break;
     case 6:
         diaSemana = "Sabado";
-
+        break;
   }
-  document.getElementById("texto").innerHTML = "Hoy es " + diaSemana;
+document.getElementById("texto").innerHTML = "Hoy es " + diaSemana;
+return diaSemana;
+
 }
+
+//EXPRECIONES FUNCIONALES
+// NO SE ALZAN
+//Tienen el return implícito. (no hay porqué poner return)
+
+let func = ( a , b ) => a + b ;
+
+let func2 = function name( a , b ){
+    return a + b ;
+};
