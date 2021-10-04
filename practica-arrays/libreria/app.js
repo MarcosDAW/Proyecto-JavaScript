@@ -15,3 +15,6 @@ let titulo = document.getElementById("autor").value;
 //añadir esta informacion a mi estructura
 
 let libreria = {};
+
+//abajo de las barras de escibir tiene que ir guardando el
+//libro al tocar el botoon añadir
