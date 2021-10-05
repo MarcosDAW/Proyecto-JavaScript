@@ -17,7 +17,9 @@ function x1(a,b,c){
     if( discriminante < 0 ){
         document.getElementById( "texto" ).innerHTML = "no tiene solución: ";
     }else if(discriminante == 0){
-        document.getElementById( "texto" ).innerHTML = " solución: ";
+        document.getElementById( "texto" ).innerHTML = "tiene una solución: ";
+    }else{
+        document.getElementById( "texto" ).innerHTML = "tiene muchas soluciones: ";
     }
     let a = document.getElementById("a").value;
     let b = document.getElementById("b").value;
