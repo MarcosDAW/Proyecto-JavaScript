@@ -59,7 +59,7 @@ arr.slice(-1)
 */
 
 //-----------------------------------------
-
+/*
 let arr = [1,2,3,4];
 let texto = ["enero","febrero","marzo"];
 
@@ -70,5 +70,5 @@ arr.forEach( (item,index,array) => { alert(`
     ${item} esta en la posicion 
     ${index} de 
     ${array}`) } );
-
+*/
 

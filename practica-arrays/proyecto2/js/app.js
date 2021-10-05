@@ -12,9 +12,10 @@
 //descargar ZealDocs.org
 //cuenta creada en CodePen con gitHub
 
-var dia = new Date().getDay();
-var diaSemana;
+
 function dias() {
+  let dia = new Date().getDay();
+  let diaSemana;
   switch (dia) {
     case 0:
         diaSemana = "Domingo";
@@ -38,9 +39,8 @@ function dias() {
         diaSemana = "Sabado";
         break;
   }
-document.getElementById("texto").innerHTML = "Hoy es " + diaSemana;
-return diaSemana;
-
+  document.getElementById("texto").innerHTML = "Hoy es " + diaSemana;
+  return diaSemana;
 }
 
 //EXPRECIONES FUNCIONALES
