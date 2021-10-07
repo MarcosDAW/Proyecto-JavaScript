@@ -4,12 +4,11 @@ function esPalindromo(texto){
     let frasevuelta =[];
     let corte = true;
     if( typeof texto == "string" ){
+        frase.replace(/ /g,"").toLowerCase();
         newfrase = frase.split("");
         console.log(newfrase);
-        for( let i = newfrase.length ; i > 0 ; i-- ){
-            //_______________AGREGA UNDEFINED AL PRINCIPIO____________
+        for( let i = newfrase.length-1 ; i > -1 ; i-- ){
             frasevuelta.push(newfrase[i]);
-            console.log(frasevuelta);
         }
         console.log(frasevuelta);
         for( let i = 0 ; i < newfrase.length ; i++ || corte == false){
@@ -27,5 +26,6 @@ function esPalindromo(texto){
     }
     return corte;
 }
-esPalindromo("La ruta nos aporto otro paso natural");
+//Devuelve true si es palindromo de lo contrario false
+//------------------------TERMINADO---------------------------------
 

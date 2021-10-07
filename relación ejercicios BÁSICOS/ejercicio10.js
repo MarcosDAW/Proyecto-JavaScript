@@ -17,7 +17,6 @@ function tirarDados(){
             contador6++;
         }
     }
-    
     console.log("cantidad de 1 - 1 : " + contador1 );
     console.log("cantidad de 6 - 6 : " + contador6 );
     console.log("suma de los dados: " + suma );
