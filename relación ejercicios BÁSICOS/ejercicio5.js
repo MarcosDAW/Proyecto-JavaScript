@@ -1,3 +1,20 @@
+/*
+let separar = () =>{
+    let array = [ "Nombre", 54 , true, "Apellidos", "Teléfono", 29, true, "Edades"
+                ,"Datos", "999"];
+    let arrayPalabras = [] ;
+    let arrayNumeros = 0 ;
+    for( let clave in array ){
+        if( typeof array[clave] == 'string' ){
+            arrayPalabras.push(array[clave]);
+        }else if( typeof array[clave] == "number" ){
+            arrayNumeros = arrayNumeros + array[clave];
+        }
+    }
+    console.log(arrayPalabras);
+    console.log(arrayNumeros);
+}
+*/
 function separarPalabras( array ) {
     let arrayPalabras = [] ;
     for( let clave in array ){
