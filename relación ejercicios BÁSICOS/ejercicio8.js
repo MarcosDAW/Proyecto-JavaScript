@@ -15,8 +15,8 @@ let cambiarMayus = (texto) => {
             }else{
                 textoActualizado.push( textoCortado[i]);
             }
-            console.log(textoActualizado);
         }
+        console.log(textoActualizado);
     }else{
         console.log("No es un texto");
     }
