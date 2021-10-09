@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script>
-        var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
-                    'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-        let numeros = document.getElementById("texto") ;
-        if( typeof numeros == "String" ){
-
-            console.log("numeros");
-
-        }
-
-
-    </script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,9 +8,36 @@
 </head>
 <body>
     <form action="ejercicio6.html">
-        <input type="text" id="texto">
+        <input type="text" id="dni">
         <br>
-        <input type="submit" value="Enviar">
+        <button type="button" onclick="enviar()">aceptar</button>
+        <p id="texto">
+            cambiar este texto
+        </p>
     </form>
+    <script>
+        var letras = ['T' , 'R' , 'W' , 'A' , 'G' , 'M' , 'Y' , 'F' , 'P' , 'D' , 'X' , 'B',
+                    'N' , 'J' , 'Z' , 'S' , 'Q' , 'V' , 'H' , 'L' , 'C' , 'K' , 'E' , 'T' ] ;
+        let enviar = () => {
+            let valor = document.getElementById("dni").value ;
+            let valorCortado = valor.split("");
+            document.getElementById("texto").innerHTML=valorCortado;
+            let valorCorrecto = true;
+            for( let i = 0 ; i < 9 ; i++ ){
+
+                if( number(valorCortado[ i ] ) == 'number' ){
+                    document.getElementById("texto").innerHTML="Correcto";
+                }
+            }
+            if( typeof number(valorCortado[ 9 ] ) == 'string' && valorCorrecto == true){
+                document.getElementById("texto").innerHTML = valor;
+            }else{
+                document.getElementById("texto").innerHTML="valor incorrecto";
+                
+            }
+            
+        }
+        
+    </script>
 </body>
 </html>

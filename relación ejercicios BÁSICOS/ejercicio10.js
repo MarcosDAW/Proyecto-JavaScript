@@ -10,17 +10,24 @@ function tirarDados(){
     }
 
     for ( let i = 0 ; i < dado.length ; i++ ){
-        suma = suma + dado[ i ];
+        
         if( dado[ i ] === dado[ i + 1 ] && dado[ i ] === 1 ){
             contador1++;
         }else if( dado[ i ] === dado[ i + 1 ] && dado[ i ] === 6 ){
             contador6++;
         }
+        suma = suma + dado[ i ];
     }
-    console.log("cantidad de 1 - 1 : " + contador1 );
-    console.log("cantidad de 6 - 6 : " + contador6 );
-    console.log("suma de los dados: " + suma );
+    console.log( "cantidad de 1 - 1 : " + contador1 );
+    console.log( "cantidad de 6 - 6 : " + contador6 );
+    console.log( "suma de los dados: " + suma );
     return dado;
 }
-tirarDados();
+//tirarDados();
+let valor = "gola123";
+let nuevoValor; 
+nuevoValor = valor.split("");
+for ( valores in nuevoValor ){
+    console.log(parseInt(valores));
+}
 //------------------------TERMINADO---------------------------------
