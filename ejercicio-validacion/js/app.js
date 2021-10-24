@@ -33,17 +33,15 @@ function miFuncion(){
     //busca el boton btnEnviar y con el listener al tocar el boton se ejecutara validarTodo
     document.getElementById("btnEnviar").addEventListener("click",validarTodo,false);
 }
-let expresion = new RegExp();
-expresion = /(^[A-Za-zÁ-ÿ-]+\s){1}([A-Za-zÁ-ÿ]+\s){1}[A-Za-zÁ-ÿ]+/;
+
 function validarTodo(e){
     let validar = [];
     let errores = [];
     let validadoTodo = true;
-
     //funcion que valida todas las opciones de mi formulario
     
-    function validarNombre(e){
-        if(expresion.test(nombre.value)){
+    function validarNombre(){
+        if(expresion=/(^[A-Za-zÁ-ÿ-]+\s){1}([A-Za-zÁ-ÿ]+\s){1}[A-Za-zÁ-ÿ]+/.test(nombre.value)){
             validar.push(true);
         }else{
             validar.push(false);
@@ -84,18 +82,19 @@ function validarTodo(e){
 
     for(let i = 0 ; i < validar.length ; i++){
         if(validar[i]==false){
-            warning = document.getElementById("warning").innerHTML=(errores[i]);
+            warning.innerHTML=(errores[i]);
             validadoTodo = false;
         }
     }
-    if(!validadoTodo){
-        e.preventDefault();
-    }else{
+    if(validadoTodo==true){
         document.warning.innerHTML=("Todo Correcto");
         console.log("to piola");
     }
     return validadoTodo;
 }
+let expresion = new RegExp();
+expresion = /(^[A-Za-zÁ-ÿ-]+\s){1}([A-Za-zÁ-ÿ]+\s){1}[A-Za-zÁ-ÿ]+/;
+
 //(forma - 2) usando una funcion
 
 
