@@ -10,7 +10,7 @@ $   <--- que finalice con
 +     <--- uno o mas
 ?     <--- cero o uno
 *     <--- cero o mas
-{3}   <---  Exáctamente 3
+{3}   <--- Exáctamente 3
 {3,9} <--- Rango entre 3 y 9
 
 []      <-- Busca los caracteres dentro de los corchetes
