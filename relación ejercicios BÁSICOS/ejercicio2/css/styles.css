@@ -1,0 +1,13 @@
+#contenedor__formulario{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
