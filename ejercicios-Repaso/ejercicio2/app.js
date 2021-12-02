@@ -1,33 +1,49 @@
 let respuestas = {
-    1:false,
-    2:true,
+    0:false,
+    1:true,
+    2:false,
     3:true,
-    4:false,
-    5:true
+    4:false
 }
+
 let preguntas = [
-    " el sol es azul",
-    " la lechuga es verde",   
-    " batman no es superheroe",  
-    " la vida no es dura",
-    " 2 + 2 = 5"
+    " (0)el sol es azul",
+    " (1)la lechuga es verde",   
+    " (2)batman es un superheroe",  
+    " (3)la vida es dura",
+    " (4)2 + 2 = 5"
 ];
+
 let verdadero = document.getElementById("verdadero");
 let falso = document.getElementById("falso");
 let pregunta = document.getElementById("pregunta");
+let respuesta = document.getElementById("respuesta");
+
+let correctas = 0;
+let preg = 0;
 
 function responder(b){
-    if(  ){
-
+    if(b === respuestas[preg]){
+        respuesta.innerHTML = ("respuesta Correcta");
+        correctas += 1;
+    }else{
+        respuesta.innerHTML = ("respuesta Incorrecta");
     }
+    console.log(preg);
 }
 
 function hacerPregunta(){
     let random = Math.floor(Math.random()*(preguntas.length));
     pregunta.innerHTML="<center><h1>"+preguntas[random]+"</h1></center>";
-    preguntas.splice( random,1 );
-    if( preguntas.length != 0 ){
-        document.write('<button id="preguntar" onclick="hacerPregunta()">Pregunta</button>');
+    pregunta.innerHTML = ("pregunta: " + preguntas[random]);
+    if(preguntas[random] === undefined){
+        pregunta.innerHTML = ("No hay mas preguntas");
+        respuesta.innerHTML = ( " Respuesta correctas: " + correctas );
+    }else{
+        respuesta.innerHTML=("");
     }
-    return true;
+    console.log("antes: " + random);
+    preg = random;
+    preguntas.splice( random,1 );
+    return preg;
 }    
