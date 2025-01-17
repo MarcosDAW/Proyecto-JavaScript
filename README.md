@@ -1,5 +1,5 @@
 # Proyecto-JavaScript
-JavaScript dado en clase
+Proyecto JS + php
 
 para subir 
 git init(en la carpeta donde estan los archivos a subir)
